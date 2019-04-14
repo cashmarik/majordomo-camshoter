@@ -521,7 +521,7 @@ $sql="SELECT * FROM $table WHERE LINKED_OBJECT LIKE '".DBSafe($object)."' AND LI
 
 
 //никого дома нет статус
-$nobodyactive=gg('NobodyHomeMode.active');
+$nobodyactive=gg('NobodyHomeMode.active')=='1';
 
    $total=count($properties);
    if ($total) {
